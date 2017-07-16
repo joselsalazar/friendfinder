@@ -1,5 +1,4 @@
-var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglistData");
+var friendsList = require("../data/friendsList");
 
 
 // ===============================================================================
@@ -7,30 +6,19 @@ var waitListData = require("../data/waitinglistData");
 // ===============================================================================
 
 module.exports = function(app) {
-  app.get("/api/tables", function(req, res) {
-    res.json(tableData);
+  app.get("/api/friendsList", function(req, res) {
+    res.json(friendsList);
   });
 
-  app.get("/api/waitlist", function(req, res) {
-    res.json(waitListData);
-  });
-
-  app.post("/api/tables", function(req, res) {
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
-    }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
+  app.post("/api/friendsList", function(req, res) {
+    friendsList.push(req.body);
+    res.json(true);
   });
 
   app.post("/api/clear", function() {
     // Empty out the arrays of data
-    tableData = [];
-    waitListData = [];
+    friendsList = [];
 
-    console.log(tableData);
+    console.log(friendsList);
   });
 };
