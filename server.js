@@ -3,8 +3,9 @@
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
 
-var express = require("express");
-var bodyParser = require("body-parser");
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -23,6 +24,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+app.use(express.static(path.join(__dirname, 'assets')));
 
 // ================================================================================
 // ROUTER
