@@ -2,7 +2,7 @@ var friendsList = [
   {
     friendsName: "A Brah!",
     friendsPic: "https://s-media-cache-ak0.pinimg.com/736x/d4/31/60/d43160eee4b57289f8745d23d0d1e586--stupid-people-funny-weird-people.jpg",
-    totalScore: "10"
+    totalScore: "19"
   },
   {
 	  friendsName: "Tom Jones",
@@ -28,6 +28,26 @@ var friendsList = [
     friendsName: "Some Guy",
     friendsPic: "http://img.izismile.com/img/img2/20090729/super_nerd_36.jpg",
     totalScore: "35"
+  },
+  {
+    friendsName: "Freddie",
+    friendsPic: "http://www.factfiend.com/wp-content/uploads/2014/10/Freddy_Krueger.jpg",
+    totalScore: "15"
+  },
+  {
+    friendsName: "Comb Over",
+    friendsPic: "http://i.stack.imgur.com/uFJwW.jpg",
+    totalScore: "41"
+  },
+  {
+    friendsName: "Cool Guy",
+    friendsPic: "http://www.heromachine.com/wp-content/uploads/2015/08/a-mc-random-28.jpg",
+    totalScore: "33"
+  },
+  {
+    friendsName: "John Stamos!",
+    friendsPic: "https://68.media.tumblr.com/396ac64614d86a11ae1bcaa1546bc0ea/tumblr_nz10bmTG881qfm32no1_250.gif",
+    totalScore: "38"
   }
 ];
 
